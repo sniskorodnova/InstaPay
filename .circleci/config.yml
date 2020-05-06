@@ -1,10 +1,13 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+executors:
+  testing_chrome:
+    docker:
+      image: circleci/node:10.14-browsers
 jobs:
   build-and-test:
-    executor:
-      name: node/default
+    executor: testing_chrome
     steps:
       - checkout
       - node/with-cache:
