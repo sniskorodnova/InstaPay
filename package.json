@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "testcafe chrome tests"
+    "test": "testcafe chrome:headless tests"
   },
   "repository": {
     "type": "git",
