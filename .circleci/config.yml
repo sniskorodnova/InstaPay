@@ -4,7 +4,7 @@ orbs:
 executors:
   testing_chrome:
     docker:
-      image: circleci/node:10.14-browsers
+      - image: circleci/node:10.14-browsers
 jobs:
   build-and-test:
     executor: testing_chrome
